@@ -1,4 +1,4 @@
-FROM fedora:latest
+FROM ubuntu:latest
 MAINTAINER Stephen Adams <sadams@redhat.com>
-RUN dnf install ansible -y && dnf clean all
+RUN apt-get install ansible -y && apt-get clean
 ENTRYPOINT ["/bin/bash"]
